@@ -1,7 +1,7 @@
 # BOT_BGNET
 <p align="center">
-  <img src="img/CONVERSA.png">
-  <img src="img/QR.png">
+  <img src="imagem/CONVERSA.png">
+  <img src="imagem/QR.jpg">
   <br/>
 </p>
 
