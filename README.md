@@ -12,7 +12,7 @@
 ```
 $ git clone https://github.com/LucasMSCaetano/BOT_BGNET.git
 
-$ cd BOT_GBNET
+$ cd BOT_BGNET
 ```
 
 **Instale as dependências**
