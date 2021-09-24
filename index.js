@@ -32,7 +32,8 @@ client.on('message', msg =>{
 
         case "1":
         case "!1":
-            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNós conseguimos permissão para continuar durante os trâmites legais. Não é possivel prever a duração deste período, por isso estamos vendendo o plano de 3 Mb de 10 dias por R$10,00.\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
+            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNo momento não estamos realizando venda de novos Vouchers. Pedimos que aguardem novas informações.');
+            //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNós conseguimos permissão para continuar durante os trâmites legais. Não é possivel prever a duração deste período, por isso estamos vendendo o plano de 3 Mb de 10 dias por R$10,00.\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
         break;
 
         case "2":
