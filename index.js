@@ -27,55 +27,61 @@ client.on('message', msg =>{
 
         case "bpeb":
         case "!bpeb":
-            msg.reply('\nCerto, identifiquei que você está localizado no *BPEB*.\n\nSuas opções de ação são:\n\n*Digite 1 - Compra*\n\n\n*Digite 2 - Trocas ou Suporte Voucher*\n\n\n*Digite 3 - Suporte Técnico*\n\n\n*Digite 4- Outros*');
+            msg.reply('\nCerto, identifiquei que você está localizado no *BPEB*.\n\nSuas opções de ação são:\n\n*Digite 1 - Compra*\n\n\n*Digite 2 - Filiação/Grêmio*\n\n\n*Digite 3 - Trocas ou Suporte Voucher*\n\n\n*Digite 4 - Suporte Técnico*\n\n\n*Digite 5 - Outros*');
         break;
 
         case "1":
         case "!1":
-            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNo momento não estamos realizando venda de novos Vouchers. Pedimos que aguardem novas informações.');
+            //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNo momento não estamos realizando venda de novos Vouchers. Pedimos que aguardem novas informações.');
             //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNós conseguimos permissão para continuar durante os trâmites legais. Não é possivel prever a duração deste período, por isso estamos vendendo o plano de 3 Mb de 10 dias por R$10,00.\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
-        break;
+            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nPara comprar um voucher é *_OBRIGATÓRIO_* que você seja filiado, para mais informações do grêmio digite *_!2_*.\n\nPara pagamentos aceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante e seu *_CPF cadastrado no grêmio*_ assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');        
+            break;
 
         case "2":
         case "!2":
-            msg.reply('Você escolheu a *_opção 2 Referente a Trocas ou Suporte Voucher no batalhão BPEB_*\n\nInforme o que está acontecendo com o seu voucher. \nEnvie o número do seu voucher, comprovante de pagamento e número de celular de quem realizou a compra.');
-        break;
+            msg.reply('Você escolheu a *_opção 2 Referente a Filiação/Grêmio no batalhão BPEB_*\n\nAgora para comprar um voucher de internet no BPEB é obrigatório que você seja filiado no grêmio, seguem os contatos para que você resolva essas questões:\n\n\n 1º Ten Santana: *(61) 99143-9333*\n3º Sgt Matheus Morais: *(61) 99854-0766*');        
+            break;
 
         case "3":
         case "!3":
-            msg.reply('Você escolheu a *_opção 3 Referente a Suporte Técnico no batalhão BPEB_*\n\nInforme sua localização (companhia, andar, prédio) e qual o problema.\n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n_*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !2*');
+            msg.reply('Você escolheu a *_opção 3 Referente a Trocas ou Suporte Voucher no batalhão BPEB_*\n\nInforme o que está acontecendo com o seu voucher. \nEnvie o número do seu voucher, comprovante de pagamento e número de celular de quem realizou a compra.');
         break;
 
         case "4":
         case "!4":
-            msg.reply('Você escolheu a *_opção 4 Referente a Outros no batalhão BPEB_*\n\nNos informe o máximo de detalhes da sua situação.');
+            msg.reply('Você escolheu a *_opção 4 Referente a Suporte Técnico no batalhão BPEB_*\n\nInforme sua localização (companhia, andar, prédio) e qual o problema.\n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n_*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !2*');
+        break;
+
+        case "5":
+        case "!5":
+            msg.reply('Você escolheu a *_opção 5 Referente a Outros no batalhão BPEB_*\n\nNos informe o máximo de detalhes da sua situação.');
         break;
 
         //------------------------------------------------------------------------------------------------------------------------------->
 
         case "bgp":
         case "!bgp":    
-            msg.reply('\nCerto, identifiquei que você está localizado no *BGP*.\n\nSuas opções de ação são:\n\n*Digite 5 - Compra*\n\n\n*Digite 6 - Trocas ou Suporte Voucher*\n\n\n*Digite 7 - Suporte Técnico*\n\n\n*Digite 8- Outros*');
+            msg.reply('\nCerto, identifiquei que você está localizado no *BGP*.\n\nSuas opções de ação são:\n\n*Digite 6 - Compra*\n\n\n*Digite 7 - Trocas ou Suporte Voucher*\n\n\n*Digite 8 - Suporte Técnico*\n\n\n*Digite 9 - Outros*');
         break;
 
-        case "5":
-        case "!5":
-            msg.reply('Você escolheu a *_opção 5 Referente a Compra/Venda no batalhão BGP_*.\n\n\nNós possuímos os seguintes planos:\n\n-> 1,5 Mb: R$ 20,00\n-> 3Mb : R$ 30,00\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
-        break;
-        
         case "6":
         case "!6":
-            msg.reply('Você escolheu a *_opção 6 Referente a Trocas ou  Suporte Voucher no batalhão BGP_*.\n\nInforme o que está acontecendo com o seu voucher. \n\nEnvie o número do seu voucher, comprovante de pagamento, últimos 4 dígitos do cartão (se aplicável) e data de compra.');
+            msg.reply('Você escolheu a *_opção 6 Referente a Compra/Venda no batalhão BGP_*.\n\n\nNós possuímos os seguintes planos:\n\n-> 1,5 Mb: R$ 20,00\n-> 3Mb : R$ 30,00\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
         break;
-
+        
         case "7":
         case "!7":
-            msg.reply('Você escolheu a *_opção 7 Referente a Suporte Técnico no batalhão BGP_*.\n\nInforme sua localização (companhia, andar, prédio) e qual o problema. \n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n _*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !6*');
+            msg.reply('Você escolheu a *_opção 7 Referente a Trocas ou  Suporte Voucher no batalhão BGP_*.\n\nInforme o que está acontecendo com o seu voucher. \n\nEnvie o número do seu voucher, comprovante de pagamento, últimos 4 dígitos do cartão (se aplicável) e data de compra.');
         break;
 
         case "8":
         case "!8":
-            msg.reply('Você escolheu a *_opção 8 Referente a Outros no batalhão BGP_*\n\nNos informe o máximo de detalhes para o seu problema.');
+            msg.reply('Você escolheu a *_opção 8 Referente a Suporte Técnico no batalhão BGP_*.\n\nInforme sua localização (companhia, andar, prédio) e qual o problema. \n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n _*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !6*');
+        break;
+
+        case "9":
+        case "!9":
+            msg.reply('Você escolheu a *_opção 9 Referente a Outros no batalhão BGP_*\n\nNos informe o máximo de detalhes para o seu problema.');
         break;
 
         
