@@ -27,6 +27,7 @@ client.on('message', msg =>{
 
         case "bpeb":
         case "!bpeb":
+        case "bpeb!":
             msg.reply('\nCerto, identifiquei que você está localizado no *BPEB*.\n\nSuas opções de ação são:\n\n*Digite 1 - Compra*\n\n\n*Digite 2 - Filiação/Grêmio*\n\n\n*Digite 3 - Trocas ou Suporte Voucher*\n\n\n*Digite 4 - Suporte Técnico*\n\n\n*Digite 5 - Outros*');
         break;
 
@@ -61,6 +62,7 @@ client.on('message', msg =>{
 
         case "bgp":
         case "!bgp":    
+        case "bgp!":
             msg.reply('\nCerto, identifiquei que você está localizado no *BGP*.\n\nSuas opções de ação são:\n\n*Digite 6 - Compra*\n\n\n*Digite 7 - Trocas ou Suporte Voucher*\n\n\n*Digite 8 - Suporte Técnico*\n\n\n*Digite 9 - Outros*');
         break;
 
