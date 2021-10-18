@@ -17,12 +17,21 @@ client.on('ready', () => {
 // Função responsável por trocar mensagens com o seu cliente.
 client.on('message', msg =>{
     const tratando_string = msg.body.toLowerCase(); // Fiz esse tratamento pensando em facilitar o envio de mensagens dos clientes que agora podem enviar tudo maiusculo, minusculo ou "mesclado" que o nosso bot vai compreender.  
+    
+    // Remover acentos - [Artur] - https://stackoverflow.com/questions/990904/remove-accents-diacritics-in-a-string-in-javascript
+    tratando_string = tratando_string.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
 
     switch (tratando_string){ //switch case simples, dependendo agora apenas do cliente para escolher as opções existentes e caso ele não escolha 
         case "menu":
         case "!menu":
-            msg.reply(`Olá eu sou o novo bot BGNet 🤖\n\nPor gentileza, identifique de qual batalhão você está falando!\n\nDigite *_BPEB_* para tratar de assuntos no Batalhão de PolÍcia do Exército.\n\n Digite *_BGP_* para tratar de assuntos no batalhão de Guarda Presidencial.`);
+        case "opa":
+        case "bom dia":
+        case "boa tarde":
+        case "boa noite":
+        case "oi":
+        case "ola":
+            msg.reply(`Olá, eu sou o novo bot BGNet 🤖\n\nPor gentileza, identifique de qual batalhão você está falando!\n\nDigite *_BPEB_* para tratar de assuntos no Batalhão de PolÍcia do Exército.\n\n Digite *_BGP_* para tratar de assuntos no batalhão de Guarda Presidencial.`);
         break;
 
         case "bpeb":
@@ -35,12 +44,12 @@ client.on('message', msg =>{
         case "!1":
             //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNo momento não estamos realizando venda de novos Vouchers. Pedimos que aguardem novas informações.');
             //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNós conseguimos permissão para continuar durante os trâmites legais. Não é possivel prever a duração deste período, por isso estamos vendendo o plano de 3 Mb de 10 dias por R$10,00.\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
-            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nPara comprar um voucher é *_OBRIGATÓRIO_* que você seja filiado, para mais informações do grêmio digite *_!2_*.\n\nPara pagamentos aceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante e seu *_CPF cadastrado no grêmio*_ assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');        
+            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nPara comprar um voucher é *_OBRIGATÓRIO_* que você seja filiado, para mais informações do grêmio digite *_!2_*.\n\nPara pagamentos aceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante e seu *CPF cadastrado no grêmio* assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');        
             break;
 
         case "2":
         case "!2":
-            msg.reply('Você escolheu a *_opção 2 Referente a Filiação/Grêmio no batalhão BPEB_*\n\nAgora para comprar um voucher de internet no BPEB é obrigatório que você seja filiado no grêmio, seguem os contatos para que você resolva essas questões:\n\n\n 1º Ten Santana: *(61) 99143-9333*\n3º Sgt Matheus Morais: *(61) 99854-0766*');        
+            msg.reply('Você escolheu a *_opção 2 Referente a Filiação/Grêmio no batalhão BPEB_*\n\nAgora para comprar um voucher de internet no BPEB é obrigatório que você seja filiado no grêmio, seguem os contatos para que você resolva essas questões:\n\n\n1º Ten Santana: *(61) 99143-9333*\n3º Sgt Matheus Morais: *(61) 99854-0766*');        
             break;
 
         case "3":
