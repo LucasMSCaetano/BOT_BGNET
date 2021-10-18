@@ -16,7 +16,9 @@ client.on('ready', () => {
 
 // Função responsável por trocar mensagens com o seu cliente.
 client.on('message', msg =>{
-    const tratando_string = msg.body.toLowerCase(); // Fiz esse tratamento pensando em facilitar o envio de mensagens dos clientes que agora podem enviar tudo maiusculo, minusculo ou "mesclado" que o nosso bot vai compreender.  
+
+    //const tratando_string = msg.body.toLowerCase(); // Fiz esse tratamento pensando em facilitar o envio de mensagens dos clientes que agora podem enviar tudo maiusculo, minusculo ou "mesclado" que o nosso bot vai compreender.  
+    const tratando_string = msg.body.normalize("NFD").replace(/\p{Diacritic}/gu, "");
     
     // Remover acentos - [Artur] - https://stackoverflow.com/questions/990904/remove-accents-diacritics-in-a-string-in-javascript
     //tratando_string = tratando_string.normalize("NFD").replace(/\p{Diacritic}/gu, "");
