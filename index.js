@@ -62,7 +62,7 @@ client.on('message', msg =>{
 
         case "4":
         case "!4":
-            msg.reply('Você escolheu a *_opção 4 Referente a Suporte Técnico no batalhão BPEB_*\n\nInforme sua localização (companhia, andar, prédio) e qual o problema.\n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n_*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !2*');
+            msg.reply('Você escolheu a *_opção 4 Referente a Suporte Técnico no batalhão BPEB_*\n\nInforme sua localização (companhia, andar, prédio) e qual o problema.\n\nPreferencialmente também envie a localização exata pelo WhatsApp.\n\n_*NÃO SERÃO TRATADOS ASSUNTOS SOBRE VOUCHER*_, *para isso digite !3*');
         break;
 
         case "5":
