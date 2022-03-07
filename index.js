@@ -40,14 +40,14 @@ client.on('message', msg =>{
         case "bpeb":
         case "!bpeb":
         case "bpeb!":
-            msg.reply('\nCerto, identifiquei que você está localizado no *BPEB*.\n\nSuas opções de ação são:\n\n*Digite 1 - Compra*\n\n\n*Digite 2 - Filiação/Grêmio*\n\n\n*Digite 3 - Trocas ou Suporte Voucher*\n\n\n*Digite 4 - Suporte Técnico*\n\n\n*Digite 5 - Outros*');
+            msg.reply('\nCerto, identifiquei que você está localizado no *BPEB*.\n\nSuas opções de ação são:\n\n*Digite 1 - Compra (necessário ser filiado ao grêmio)*\n\n\n*Digite 2 - Filiação/Grêmio*\n\n\n*Digite 3 - Trocas ou Suporte Voucher*\n\n\n*Digite 4 - Suporte Técnico*\n\n\n*Digite 5 - Outros*');
         break;
 
         case "1":
         case "!1":
             //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNo momento não estamos realizando venda de novos Vouchers. Pedimos que aguardem novas informações.');
             //msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nNós conseguimos permissão para continuar durante os trâmites legais. Não é possivel prever a duração deste período, por isso estamos vendendo o plano de 3 Mb de 10 dias por R$10,00.\n\nAceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');
-            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nPara comprar um voucher é *_OBRIGATÓRIO_* que você seja filiado, para mais informações do grêmio digite *_!2_*.\n\nOs planos disponíveis são: \n*1,5 Mb:* R$20,00 - _30 dias_\n*3 Mb:* R$ 30,00 - _30 dias_\n*3 Mb:* R$ 5,00 - _1 dia_\n\nPara pagamentos aceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nBasta enviar o comprovante e seu *CPF cadastrado no grêmio* assim que enviar o pagamento.\n\nIremos responder com o voucher assim que possível.');        
+            msg.reply('Você escolheu a *_opção 1 Referente a Compra/Venda no batalhão BPEB_*\n\nPara comprar um voucher é *_OBRIGATÓRIO_* que você seja filiado ao grêmio, para mais informações de como se filiar, digite *_!2_*.\n\nPara receber o voucher basta enviar o *COMPROVANTE DE PAGAMENTO E O CPF CADASTRADO NO GRÊMIO* assim que enviar o pagamento.\n\nOs planos disponíveis são: \n*1,5 Mb:* R$20,00 - _30 dias_\n*3 Mb:* R$ 30,00 - _30 dias_\n*3 Mb:* R$ 5,00 - _1 dia_\n\nPara pagamentos aceitamos:\n\nPIX: 32.999.022/0001-01\nPicPay: @BGNet\n\nIremos responder com o voucher assim que possível. O atendimento é por ordem de chegada.');        
             break;
 
         case "2":
