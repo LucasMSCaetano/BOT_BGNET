@@ -2,11 +2,14 @@
   "name": "bot-gbnet",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "author": "Lucas Caetano",
   "license": "MIT",
   "dependencies": {
-    "qrcode-terminal": "^0.12.0",
-    "sharp": "^0.29.1",
-    "whatsapp-web.js": "^1.14.1"
+    "qrcode-terminal": "0.12.0",
+    "sharp": "0.29.1",
+    "whatsapp-web.js": "1.14.1"
   }
 }
