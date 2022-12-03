@@ -1,6 +1,9 @@
-const { Client } = require('whatsapp-web.js');
 const qrcode = require('qrcode-terminal');
-const client = new Client();
+
+const { Client, LocalAuth } = require('whatsapp-web.js');
+const client = new Client({
+    authStrategy: new LocalAuth()
+});
 
 // Função responsável por gerar o qrcode que irá nos autenticar no wpp.
 client.on('qr', (qr) => {
