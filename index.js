@@ -59,7 +59,7 @@ client.on('message', msg =>{
 
         case "2":
         case "!2":
-            msg.reply('Você escolheu a *_opção 2 Referente a Filiação/Grêmio no batalhão BPEB_*\n\nAgora para comprar um voucher de internet no BPEB é obrigatório que você seja filiado no grêmio, seguem os contatos para que você resolva essas questões:\n\n\n1º Ten Santana: *(61) 99143-9333*\n3º Sgt Matheus Morais: *(61) 99854-0766*');        
+            msg.reply('Você escolheu a *_opção 2 Referente a Filiação/Grêmio no batalhão BPEB_*\n\nAgora para comprar um voucher de internet no BPEB é obrigatório que você seja filiado no grêmio, seguem os contatos para que você resolva essas questões:\n\n\n1º Ten Santana: *(61) 99143-9333*\n3º Sgt Rafael Santos: *(61) 99270-1225*');        
             break;
 
         case "3":
